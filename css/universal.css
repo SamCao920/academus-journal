@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: "Calendas";
-    src: url("/academus-website/fonts/calendas_plus.ttf");
+    src: url("../fonts/calendas_plus.ttf");
 }
 @font-face {
     font-family: "Calendas-Italic";
-    src: url("/academus-website/fonts/calendas_plus_italic.ttf");
+    src: url("../fonts/calendas_plus_italic.ttf");
 }
 
 /* main display content */
