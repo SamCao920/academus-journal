@@ -1,0 +1,73 @@
+/* titles */
+/* try to get rid of "title1" and "title2" */
+
+.title1, .title2 {
+    white-space: nowrap;
+    font-size: 22vw;
+
+    width: 100%;
+    position: absolute;
+    left: 50%;
+
+    overflow: hidden;
+
+    /* animation-name: blur-in; */
+    /* animation-duration: 3s; */
+}
+
+.title1 {
+    transform: translate(-50%, -70%);
+
+}
+.title2 {
+    transform: translate(-50%, 30%);
+}
+
+.subtitle {
+    position: absolute;
+
+    font-size: 4vw;
+    font-family: "Calendas-Italic";
+    
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 330%);
+
+    text-overflow: hidden;
+}
+
+/* links */
+
+.links {
+    background-color: var(--black);
+
+    width: 100%;
+    position: fixed;
+    left: 0%;
+    bottom: 0;
+
+    display: table;
+    table-layout: fixed;
+}
+
+.links a {
+
+    color: var(--tan);
+
+    display: table-cell;
+    text-align: center;
+
+    color: --tan;
+
+    font-size: 3vw;
+}
+
+/* animations */
+
+@keyframes blur-in {
+    0% {
+        text-shadow: var(--black) 0 0 10vw;
+        opacity: 0;
+    }
+}

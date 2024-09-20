@@ -1,0 +1,41 @@
+/* fonts */
+
+@font-face {
+    font-family: "Calendas";
+    src: url("/fonts/calendas_plus.ttf");
+}
+@font-face {
+    font-family: "Calendas-Italic";
+    src: url("/fonts/calendas_plus_italic.ttf");
+}
+
+/* main display content */
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    background-color: var(--tan);
+    color: var(--black);
+
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    font-family: 'Calendas';
+
+    overflow-y:scroll;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/* variables */
+
+:root {
+    --tan: #f4ead5;
+    --black: #333;
+}
