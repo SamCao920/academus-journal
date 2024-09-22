@@ -6,3 +6,8 @@
     * image
     * ACADEMUS
     * navbar
+
+* title page needs to have a better introduction
+* image caurosel
+
+* article js needs to fix the return thing

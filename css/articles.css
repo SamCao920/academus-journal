@@ -1,0 +1,70 @@
+/* links */
+
+.links {
+
+    background-color: var(--black);
+
+    width: 100%;
+    position: fixed;
+    left: 0%;
+    top: 0;
+
+    display: table;
+    table-layout: fixed;
+
+    align-items: center;
+}
+
+.links a {
+
+    font-family: "Calendas-Italic";
+
+    color: var(--tan);
+
+    display: table-cell;
+    text-align: center;
+
+    color: --tan;
+
+    font-size: 2vw;
+}
+
+.links h2 {
+    letter-spacing: 0.1vw;
+
+    color: var(--tan);
+
+    display: table-cell;
+    text-align: center;
+
+    color: --tan;
+
+    font-size: 2.5vw;
+}
+
+/* title */
+
+h1 {
+    font-size: 5vw;
+}
+
+/* articles */
+
+.articles {
+    text-align: left;
+    margin-top: 5vw;
+    margin-left:auto;margin-right:auto;
+    width:70%;
+    list-style-type: none;
+}
+
+.articles a {
+    display: block;
+
+    font-family: "Calendas-Italic";
+    font-size: 2vw;
+    color: var(--black);
+
+    margin-bottom: 2vw;
+
+}

@@ -24,9 +24,16 @@ body {
     position: relative;
     justify-content: center;
     font-family: 'Calendas';
+    white-space: wrap;
 
     overflow-y:scroll;
     height: 100%;
+
+    color: var(--black);
+}
+
+a {
+    text-decoration: none;
 }
 
 ::-webkit-scrollbar {
