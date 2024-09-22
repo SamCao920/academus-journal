@@ -16,7 +16,7 @@ function getFile(queryString) {
     
 
     //doesn't return for some reason
-    fetch("../articles/" + filename)
+    fetch("https://raw.githubusercontent.com/Rar3Pineapple/academus-website/refs/heads/main/articles/" + filename)
         .then(result => result.text())
         .then(data => {
             const result = convertMarkdownToHtml(data)
