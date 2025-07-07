@@ -14,8 +14,13 @@ export function makeFooter() {
     link1.href="#";
     link1.innerHTML = "link one"
 
+    const link2 = document.createElement("a");
+    link2.href="#";
+    link2.innerHTML = "link two"
+
     // add links to link list
     links.appendChild(link1);
+    links.appendChild(link2)
 
     // add subsections to footer
     foot.appendChild(logo);

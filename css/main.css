@@ -8,6 +8,8 @@
     height: 100vh;
     width: 100vw;
     background: url('../images/cover.JPG') center/cover no-repeat;
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent);
 }
 
 
@@ -20,31 +22,27 @@
 }
 
 /* top nav */
-#hero header {
+#hero div {
     position: relative; 
     display: flex;
     justify-content: flex-end;
     padding: 1.5rem;
-}
-#hero header a {
-    color: var(--beige);
-    text-decoration: none;
-    font-weight: 300;
-    margin-left: 2rem;
-    white-space: nowrap;
-}
-#hero header a:hover {
-    text-decoration: underline;
 }
 
 /* centered title */
 #hero h1 {
     color: var(--beige);
     position: relative;     /* stack above the overlay */
-    height: calc(100% - 10rem);
+    height: calc(100% - 8rem);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 13vw;         /* responsive */
     letter-spacing: 0.1em;
+}
+
+/* about */
+
+#about {
+    margin-bottom: 10vh;
 }

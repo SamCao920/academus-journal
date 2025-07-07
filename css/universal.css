@@ -14,6 +14,7 @@
     color: var(--black);
     transition: 0.25s;
     scrollbar-width: none;
+    font-weight: 100;
 }
 
 body {
@@ -25,18 +26,23 @@ body {
 
 a {
     transform-origin: left center;
-    text-decoration: none!important;
+    text-decoration: none;
 }
 
 a:hover {
-    transform: scale(1.2);
+    transform: scale(1.2)!important;
 }
 
 /* sections */
 
-.sectitle {
-    margin: 3vh 9vw 1vw 10vw;
+.pgtitle {
+    margin: 3vw 10vw 2vw 10vw;
+    text-align: center;
+    font-size: 4vw;
+}
 
+.sectitle {
+    margin: 3vh 10vw 1vw 10vw;
     font-size: 3vw;
 }
 
@@ -44,33 +50,36 @@ a:hover {
     margin-left: 10vw;
     margin-right: 10vw;
 
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
-footer {
-    bottom: 0px;
-    margin-top: auto;
+footer, header {
+    position:relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: var(--black);
 }
 
-footer h1{
+footer h1, header h1{
     font-size: 2vw;
     color: var(--beige);
     margin-left: 1vw;
 }
 
+
 footer nav {
-    margin-right:1vw;
+    justify-content: space-around;
 }
 
-footer nav a {
+footer nav a, header nav a {
+    font-style: italic;
     font-size:1vw;
     color:var(--beige);
     margin-right: 1vw;
 }
+
+
 
 /* scrolling */
 
@@ -83,20 +92,13 @@ footer nav a {
 
 @font-face {
     font-family: "Calendas";
-    src: url("../fonts/calendas-roman.ttf");
-    font-style: normal;
-}
-
-/* Computer Modern Serif */
-
-@font-face {
-    font-family: "CMU";
-    src: url("../fonts/cmu-roman.ttf");
+    src: url("../fonts/calendas_plus.ttf");
     font-style: normal;
 }
 
 @font-face {
-    font-family: "CMU";
-    src: url("../fonts/cmu-italic.ttf");
+    font-family: "Calendas";
+    src: url("../fonts/calendas_plus_italic.ttf");
     font-style: italic;
 }
+
