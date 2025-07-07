@@ -1,48 +1,102 @@
-/* fonts */
-
-@font-face {
-    font-family: "Calendas";
-    src: url("../fonts/calendas_plus.ttf");
-}
-@font-face {
-    font-family: "Calendas-Italic";
-    src: url("../fonts/calendas_plus_italic.ttf");
+:root {
+    --black: #2e2e2e;
+    --beige: #efe9e5;
+    --green: #6daf56;
 }
 
-/* main display content */
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
 
-html {
-    overflow: hidden;
-    height: 100%;
+    position:relative;
+
+    color: var(--black);
+    transition: 0.25s;
+    scrollbar-width: none;
 }
 
 body {
-    background-color: var(--tan);
-    color: var(--black);
-
-    text-align: center;
-    position: relative;
-    justify-content: center;
-    font-family: 'Calendas';
-    white-space: wrap;
-
-    overflow-y:scroll;
-    height: 100%;
-
-    color: var(--black);
+    background-color: var(--beige);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 a {
-    text-decoration: none;
+    transform-origin: left center;
+    text-decoration: none!important;
 }
 
-::-webkit-scrollbar {
-    width: 0;
+a:hover {
+    transform: scale(1.2);
 }
 
-/* variables */
+/* sections */
 
-:root {
-    --tan: #f4ead5;
-    --black: #333;
+.sectitle {
+    margin: 3vh 9vw 1vw 10vw;
+
+    font-size: 3vw;
+}
+
+.secdesc {
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+    font-size: 2vw;
+}
+
+footer {
+    bottom: 0px;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--black);
+}
+
+footer h1{
+    font-size: 2vw;
+    color: var(--beige);
+    margin-left: 1vw;
+}
+
+footer nav {
+    margin-right:1vw;
+}
+
+footer nav a {
+    font-size:1vw;
+    color:var(--beige);
+    margin-right: 1vw;
+}
+
+/* scrolling */
+
+-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Calendas */
+
+@font-face {
+    font-family: "Calendas";
+    src: url("../fonts/calendas-roman.ttf");
+    font-style: normal;
+}
+
+/* Computer Modern Serif */
+
+@font-face {
+    font-family: "CMU";
+    src: url("../fonts/cmu-roman.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CMU";
+    src: url("../fonts/cmu-italic.ttf");
+    font-style: italic;
 }
