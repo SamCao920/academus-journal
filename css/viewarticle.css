@@ -1,121 +1,44 @@
-/* metadata */
+@import "universal.css";
 
-.metadata {
-    width: 100%;
-    top: 0%;
-    display:block;
-
-    margin-bottom: 3vw;
-    padding-bottom: 3vw;
-    padding-top: 3vw;
-    
-}
-
-.title{
-    font-size: 5vw;
-    text-transform: uppercase;
-}
-
-.subtitle {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+#subtitle {
+    text-align: center;
     font-size: 2vw;
-    font-family: "Calendas-Italic";
+    font-style: italic;
+    margin: 1vw 10vw 2vw 10vw;
 }
 
-.author, .date {
-    font-family: "Calendas-Italic";
-    font-weight: bold;
-    font-size: 2vw;
+#date-author {
+    display: flex;
+    margin: 1vw 30vw 2vw 30vw;
+    justify-content: space-around;
 }
 
-/* body */
-
-article {
-    width: 70%;
-    margin-left: auto; 
-    margin-right: auto;
-    margin-bottom: 0;
-
+#date-author {
     font-size: 1.5vw;
-    text-align: left;
-
-    line-height: 170%;
 }
 
-a {
-    color: #5f855f;
+#article {
+    display: block;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    font-size: 1.5vw;
+    margin-bottom: 3vw;
 }
 
-h1 {
-    font-size: 5vw;
+#article p, #article a{
+    margin-top: 1vw;
+    text-indent: 3vw;
 }
 
-h2 {
-    font-size: 4vw;
+#article a {
+   text-decoration: var(--green) underline wavy; 
 }
 
-h3{
-    font-size: 3vw;
-}
-
-h4{
-    font-size: 2.5vw;
-}
-
-h5{
-    font-size: 2vw;
-}
 
 blockquote {
-    border-left: 0.5vw solid var(--black);
+    border-left: 0.2vw solid var(--black);
     margin: 2vw 0.5vw;
     padding-left: 2vw;
 
-    font-family: "Calendas-Italic";
-}
-
-/* links */
-
-.links {
-
-    background-color: var(--black);
-
-    width: 100%;
-    position: fixed;
-    left: 0%;
-    top: 0;
-
-    display: table;
-    table-layout: fixed;
-
-    align-items: center;
-}
-
-.links a {
-
-    font-family: "Calendas-Italic";
-
-    color: var(--tan);
-
-    display: table-cell;
-    text-align: center;
-
-    color: --tan;
-
-    font-size: 2vw;
-}
-
-.links h2 {
-    letter-spacing: 0.1vw;
-
-    color: var(--tan);
-
-    display: table-cell;
-    text-align: center;
-
-    color: --tan;
-
-    font-size: 2.5vw;
+    font-style: italic;
 }

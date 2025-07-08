@@ -1,7 +1,7 @@
 ---
 title: From China to New York, by Way of the Southern Border
 subtitle: Thousands of Chinese migrants have made their way to Queens, Brooklyn and Chinatown after first passing through Central and South America.
-date: September 22, 2024
+date: September 22, 2024 
 author: Joanna Deng
 ---
 When busloads of migrants from Venezuela and Latin America started turning up on New York City streets in 2022, it spurred a crisis that has overwhelmed city shelters and incited protests over immigration policies.

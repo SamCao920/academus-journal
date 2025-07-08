@@ -1,8 +1,12 @@
+import { makeHeader } from "./makeHeader.js";
+import { makeFooter } from "./makeFooter.js";
+
+// code from previous website
+
 // get the parameter from the url
 
 function render() {
     // searches in the url, then gets the text, then converts the text.
-
 
     getFile(window.location.search)
 }
@@ -12,11 +16,15 @@ function render() {
 function getFile(queryString) {
 
     // ?example -> example.md
-    const filename = queryString.substring(1) + ".md";
+    const urlParam = new URLSearchParams(window.location.search);
+    const vol = urlParam.get("vol");
+    const art = urlParam.get("art");
+    console.log(vol,art);
+    console.log("../issues/" + vol+"/" + art +".md"); 
     
 
     //doesn't return for some reason
-    fetch("https://raw.githubusercontent.com/rarepineapples/academus-website/refs/heads/main/articles/" + filename)
+    fetch("../issues/" + vol+"/" + art +".md")
         .then(result => result.text())
         .then(data => {
             const result = convertMarkdownToHtml(data)
@@ -99,13 +107,19 @@ function convertMarkdownToHtml(markdown) {
 
 function insertText(text,metadata) {
     // render the metadata
-    document.querySelector(".title").innerHTML = metadata.title
-    document.querySelector(".subtitle").innerHTML = metadata.subtitle
-    document.querySelector(".date").innerHTML = metadata.date
-    document.querySelector(".author").innerHTML = metadata.author
+    document.querySelector(".pgtitle").innerHTML = metadata.title.toUpperCase();
+    document.querySelector("#subtitle").innerHTML = metadata.subtitle;
+    document.querySelector("#date").innerHTML = metadata.date;
+    document.querySelector("#author").innerHTML = metadata.author;
     // render the flesh
-    document.querySelector(".article").innerHTML = text
+    document.querySelector("#article").innerHTML = text;
 
     // change meta title
-    document.title= metadata.title
+    document.title= metadata.title;
+}
+
+window.onload = () => {
+    makeFooter();
+    makeHeader();
+    render();
 }

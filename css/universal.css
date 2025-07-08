@@ -1,48 +1,104 @@
-/* fonts */
+:root {
+    --black: #2e2e2e;
+    --beige: #efe9e5;
+    --green: #6daf56;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+
+    position:relative;
+
+    color: var(--black);
+    transition: 0.25s;
+    scrollbar-width: none;
+    font-weight: 100;
+}
+
+body {
+    background-color: var(--beige);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+a {
+    transform-origin: left center;
+    text-decoration: none;
+}
+
+a:hover {
+    transform: scale(1.2)!important;
+}
+
+/* sections */
+
+.pgtitle {
+    margin: 3vw 10vw 2vw 10vw;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.sectitle {
+    margin: 3vh 10vw 1vw 10vw;
+    font-size: 3vw;
+}
+
+.secdesc {
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+    font-size: 1.5vw;
+}
+
+footer, header {
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--black);
+}
+
+footer h1, header h1{
+    font-size: 2vw;
+    color: var(--beige);
+    margin-left: 1vw;
+}
+
+
+footer nav {
+    justify-content: space-around;
+}
+
+footer nav a, header nav a {
+    font-style: italic;
+    font-size:1vw;
+    color:var(--beige);
+    margin-right: 1vw;
+}
+
+
+
+/* scrolling */
+
+-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Calendas */
 
 @font-face {
     font-family: "Calendas";
     src: url("../fonts/calendas_plus.ttf");
+    font-style: normal;
 }
+
 @font-face {
-    font-family: "Calendas-Italic";
+    font-family: "Calendas";
     src: url("../fonts/calendas_plus_italic.ttf");
+    font-style: italic;
 }
 
-/* main display content */
-
-html {
-    overflow: hidden;
-    height: 100%;
-}
-
-body {
-    background-color: var(--tan);
-    color: var(--black);
-
-    text-align: center;
-    position: relative;
-    justify-content: center;
-    font-family: 'Calendas';
-    white-space: wrap;
-
-    overflow-y:scroll;
-    height: 100%;
-
-    color: var(--black);
-}
-
-a {
-    text-decoration: none;
-}
-
-::-webkit-scrollbar {
-    width: 0;
-}
-
-/* variables */
-
-:root {
-    --tan: #f4ead5;
-    --black: #333;
-}
