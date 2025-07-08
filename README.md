@@ -8,7 +8,6 @@ Welcome to the **Academus Philosophy Journal**, a student-run journal dedicated 
 
 * [Overview](#overview)
 * [Features](#features)
-* [Usage](#usage)
 * [Submitting Articles](#submitting-articles)
 * [DOI & ISSN Registration](#doi--issn-registration)
 * [Contact](#contact)
