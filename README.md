@@ -1,6 +1,6 @@
-# Academus Philosophy Journal Website
+# Academus Philosophy Journal
 
-Welcome to the **Academus Philosophy Journal** website, a student-run online platform dedicated to publishing high-quality philosophical essays and discussions by high schoolers.
+Welcome to the **Academus Philosophy Journal**, a student-run journal dedicated to publishing high-quality philosophical essays and discussions by high schoolers.
 
 ---
 
