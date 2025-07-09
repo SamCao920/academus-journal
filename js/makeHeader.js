@@ -11,7 +11,7 @@ export function makeHeader() {
 
     // add links in 
     const homepage = document.createElement("a");
-    homepage.href="./main.html";
+    homepage.href="../index.html";
     homepage.innerHTML = "Homepage"
 
     const team = document.createElement("a");
