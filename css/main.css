@@ -1,11 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
+/* Google Fonts Imports */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Montserrat:ital,wght@0,700;1,700&display=swap');
 @import "universal.css";
 
-/* Apply academic serif font globally */
+/* Global Typography */
 html {
-    font-family: 'EB Garamond', Georgia, serif;
+    /* Body text: clean sans-serif */
+    font-family: 'Open Sans', Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
+    color: var(--text-color, #333);
+}
+
+/* Headings: strong sans-serif accent */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    color: var(--heading-color, #111);
 }
 
 /* hero container */
@@ -36,11 +48,12 @@ html {
 }
 
 #hero nav a {
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
     font-style: italic;
+    font-weight: 700;
     color: var(--beige);
     padding-right: 1.5rem;
-    /* ensure serif look */
-    font-family: inherit;
+    letter-spacing: 0.05em;
 }
 
 /* centered title */
@@ -53,10 +66,9 @@ html {
     font-size: 13vw;
     letter-spacing: 0.1em;
     color: var(--beige);
-    font-family: inherit;
 }
 
-/* about */
+/* about section */
 #about {
     margin-bottom: 10vh;
 }
