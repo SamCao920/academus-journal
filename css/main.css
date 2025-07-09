@@ -53,3 +53,8 @@
 #about {
     margin-bottom: 10vh;
 }
+
+
+#about li {
+    margin-bottom: 1vw;
+}
