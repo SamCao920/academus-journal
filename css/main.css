@@ -1,25 +1,34 @@
 /* Google Fonts Imports */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Montserrat:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 @import "universal.css";
 
 /* Global Typography */
 html {
-    /* Body text: clean sans-serif */
-    font-family: 'Open Sans', Arial, sans-serif;
+    /* Body text: classic serif */
+    font-family: 'Merriweather', Georgia, serif;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.7;
     color: var(--text-color, #333);
 }
 
-/* Headings: strong sans-serif accent */
+/* Headings: modern sans-serif */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 0.5em;
     color: var(--heading-color, #111);
 }
 
+/* Featured heading sizes */
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.5rem; }
+
+/* Body links */
+a {
+    color: var(--link-color, #0056b3);
+    text-decoration: underline;
+}
 /* hero container */
 #hero {
     transition: 0s;
@@ -48,9 +57,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero nav a {
-    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     font-style: italic;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--beige);
     padding-right: 1.5rem;
     letter-spacing: 0.05em;
@@ -66,6 +75,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 13vw;
     letter-spacing: 0.1em;
     color: var(--beige);
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
 }
 
 /* about section */
@@ -75,4 +86,14 @@ h1, h2, h3, h4, h5, h6 {
 
 #about li {
     margin-bottom: 1vw;
+}
+
+/* Blockquotes for aesthetic emphasis */
+blockquote {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    margin: 1.5em 2em;
+    color: var(--text-color, #333);
+    border-left: 4px solid var(--heading-color, #111);
+    padding-left: 1em;
 }
