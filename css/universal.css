@@ -12,10 +12,11 @@
     position:relative;
 
     color: var(--black);
-    transition: 0.25s;
     scrollbar-width: none;
     font-weight: 100;
+
 }
+
 
 body {
     background-color: var(--beige);
@@ -24,6 +25,7 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+
 a {
     text-decoration: none;
 }
@@ -31,10 +33,12 @@ a {
 
 /* sections */
 
+
 .pgtitle {
     margin: 3vw 10vw 2vw 10vw;
     text-align: center;
     font-size: 4vw;
+
 }
 
 .sectitle {
