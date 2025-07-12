@@ -31,10 +31,7 @@
 }
 
 #article a {
-   text-decoration: var(--green) underline wavy;
-}
-#article a:hover {
-   transform: none;
+   text-decoration: var(--green) underline wavy; 
 }
 
 
