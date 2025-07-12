@@ -1,5 +1,6 @@
 import { makeHeader } from "./makeHeader.js";
 import { makeFooter } from "./makeFooter.js";
+import { initPageTransitions } from "./pageTransitions.js";
 
 // code from previous website
 
@@ -131,4 +132,5 @@ window.onload = () => {
     makeFooter();
     makeHeader();
     render();
+    initPageTransitions();
 }

@@ -1,5 +1,6 @@
 import { makeFooter } from "./makeFooter.js";
 import { makeHeader } from "./makeHeader.js";
+import { initPageTransitions } from "./pageTransitions.js";
 
 function render() {
     const queryString = window.location.search;
@@ -54,5 +55,6 @@ function render() {
 window.onload = () => {
     makeFooter();
     makeHeader();
-    render()
+    render();
+    initPageTransitions();
 }
