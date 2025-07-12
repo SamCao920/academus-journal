@@ -19,12 +19,21 @@ function getFile(queryString) {
     const urlParam = new URLSearchParams(window.location.search);
     const vol = urlParam.get("vol");
     const art = urlParam.get("art");
-    console.log(vol,art);
     console.log("../issues/" + vol+"/" + art +".md"); 
     
+    // https://raw.githubusercontent.com/SamCao920/academus-journal/refs/heads/main/issues/vol5/example.md
 
-    //doesn't return for some reason
-    fetch("../issues/" + vol+"/" + art +".md")
+    const rawUrl =
+        "https://raw.githubusercontent.com/SamCao920/academus-journal/refs/heads/main/issues/" +
+        vol +
+        "/" +
+        art +
+        ".md";
+    console.log(rawUrl);
+
+
+    //fetch the raw file from GitHub
+    fetch(rawUrl)
         .then(result => result.text())
         .then(data => {
             const result = convertMarkdownToHtml(data)
