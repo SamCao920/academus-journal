@@ -2,36 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Our Team</title>
-
-  <link rel="stylesheet" href="../css/authors.css"/>
-  <script type="module" src="../js/main.js"></script>
-
+  <title>refactor branch</title>
+  <link rel="stylesheet" href="/css/child.css"/>
 </head>
-
 <body>
 
-  <section id="content">
+<hr>
+<section id="title">
+    <h1 class="sectitle">Authors</h1>
+    <a href="/index.html">Home</a>
+</section>
+<hr><hr>
 
-    <h1 class="pgtitle">FOR AUTHORS</h1>
-
-    <p class="secdesc">
-        Thank you for your interest in submitting to Academus. Here you will find the guidelines and directions for submission, review, and publication.
+<div id="content">
+<section id="page">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas vitae enim et lacinia. Fusce sed tortor sit amet urna ultricies vestibulum. Duis a metus in orci tincidunt aliquet. Donec feugiat lacus auctor sem molestie, a rhoncus augue viverra. Curabitur hendrerit elit ante, at varius nisl malesuada at. Suspendisse et mi nisl. Cras efficitur metus id diam condimentum varius. Aliquam eu urna feugiat, vehicula ex non, rutrum arcu. Curabitur scelerisque in enim nec pharetra. Fusce fermentum neque felis, et convallis leo tristique vel. Pellentesque ut turpis ut quam ullamcorper congue lobortis quis sem. 
     </p>
-
-    <h2 class="sectitle">Formatting Guidelines</h2>
-    
-    <p class="secdesc">
-        Tailwind is absolutely not required to be scalable, and it is not used by most companies. I agree with you—I prefer being able to look at one place for my styles, rather than having to interpret a bunch of shorthand classes. Others find the opposite; it's really just a matter of opinion. You can make the case that tailwind results in a smaller total css size, since the same classes are reused many times. But personally, I've never found css size to be a major cause of website slowness, so ease of development/maintenance is more important to me. And that means using scoped styles, not tailwind.
+</section>
+<section id="nav">
+    <ul>
+        <li>
+            <a href="team.html">Our Team</a>
+        </li>
+        <li>
+            <a href="issues.html">Issues</a>
+        </li>
+        <li>
+            <a href="authors.html">For Authors</a>
+        </li>
+       <li>
+            <a href="blog.html">Blog</a>
+        </li>
+    </ul>
+    <p>
+        ISSN: 000-0000X
     </p>
-
-    <h2 class="sectitle">Submission Instructions</h2>
-
-    <p class="secdesc">
-        I don't think the question particularly relates to Vue, it's more about if you benefit from tailwind which is case by case scenario. For me, I prefer not to use it, we already have sass mixins for re-usable styles that we can use within the style block, and I don't like the template looking busy with classes and being hard to parse visually. (The same way I don't like the template being full of JS ternary conditions and whatnot, and using computed properties instead always keeps it cleaner)
-    </p>
-
-  </section>
+</section>
+</div>
 
 </body>
-</html>

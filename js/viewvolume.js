@@ -1,6 +1,3 @@
-import { makeFooter } from "./makeFooter.js";
-import { makeHeader } from "./makeHeader.js";
-
 function render() {
     const queryString = window.location.search;
     
@@ -12,7 +9,7 @@ function render() {
         console.log(data[0].title)
 
         // change title
-        document.getElementsByClassName("pgtitle")[0].innerHTML  = data[0].title.toUpperCase();
+        document.getElementsByClassName("sectitle")[0].innerHTML  = data[0].title;
         document.title = data[0].title;
 
         // area of individual articles 
@@ -20,39 +17,37 @@ function render() {
 
         for (var i = 1; i < data.length; i ++) {
 
-            // subwrapper
-            const wrap = document.createElement("div");
+            // list element 
+            const wrap = document.createElement("li");
 
             console.log(data[i]);
 
             // create title 
             const article_name = document.createElement("a");
             article_name.innerHTML = data[i].name;
-            article_name.href = "viewarticle.html?vol="+queryString.substring(1)+"&art="+data[i].link;
+            article_name.href = "../issues/vol1/" + data[i].link + ".pdf";
 
             // create author
-            const author = document.createElement("h2");
-            author.innerHTML = data[i].author;
+            // const author = document.createElement("h2");
+            // author.innerHTML = data[i].author;
 
             // create list wrapper
-            const review = document.createElement("li");
+            // const review = document.createElement("li");
 
             // add  title and author to subwrapper 
-            wrap.appendChild(article_name);
-            wrap.appendChild(author);
+            // wrap.appendChild(article_name);
+            // wrap.appendChild(author);
 
             // subwrapper to list wrapper
-            review.appendChild(wrap);
+            wrap.appendChild(article_name);
 
             // add review to links list
-            links.appendChild(review);
+            links.appendChild(wrap);
 
         }
     })
 }
 
 window.onload = () => {
-    makeFooter();
-    makeHeader();
     render()
 }
