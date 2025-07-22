@@ -1,0 +1,39 @@
+@import url("universal.css");
+
+
+#title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+}
+
+#content {
+    display: inline-grid;
+    margin-left: 20pt;
+    margin-right: 20pt;
+}
+
+#page {
+    width: 500pt;
+}
+
+#nav {
+    position: fixed;
+    right: 10pt;
+    margin-left: 10pt;
+    text-align: right;
+}
+
+#nav ul {
+    list-style-type: none;
+}
+
+#nav ul li {
+    margin-bottom: 10pt;
+}
+

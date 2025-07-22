@@ -1,0 +1,27 @@
+@import url("universal.css");
+
+body {
+    width: 400pt;
+    margin: auto;
+}
+
+#title img {
+    width: 400pt;
+    margin: auto;
+}
+
+#links {
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+    display: flex;
+    justify-content: space-around;
+
+    font-family: Merriweather;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+
+    font-family: Merriweather;
+}

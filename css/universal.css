@@ -1,104 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
 :root {
-    --black: #2e2e2e;
-    --beige: #efe9e5;
-    --green: #6daf56;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
-
-    position:relative;
-
-    color: var(--black);
-    scrollbar-width: none;
-    font-weight: 100;
-
-}
-
-
-body {
-    background-color: var(--beige);
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
-
-
-a {
-    text-decoration: none;
-}
-
-
-/* sections */
-
-
-.pgtitle {
-    margin: 3vw 10vw 2vw 10vw;
-    text-align: center;
-    font-size: 4vw;
-
+    --emph: #178f59
 }
 
 .sectitle {
-    margin: 3vh 10vw 1vw 10vw;
-    font-size: 3vw;
+    color: var(--emph);
+    font-family: Montserrat;
 }
 
-.secdesc {
-    margin-left: 10vw;
-    margin-right: 10vw;
-
-    font-size: 1.5vw;
+a {
+    text-decoration: none;
+    color: var(--emph);
 }
 
-footer, header {
-    position:relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--black);
-}
-
-footer h1, header h1{
-    font-size: 2vw;
-    color: var(--beige);
-    margin-left: 1vw;
-}
-
-
-footer nav {
-    justify-content: space-around;
-}
-
-footer nav a, header nav a {
-    font-style: italic;
-    font-size:1vw;
-    color:var(--beige);
-    margin-right: 1vw;
-}
-
-
-
-/* scrolling */
-
--webkit-scrollbar {
-    display: none;
-}
-
-
-/* Calendas */
-
-@font-face {
-    font-family: "Calendas";
-    src: url("../fonts/calendas_plus.ttf");
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Calendas";
-    src: url("../fonts/calendas_plus_italic.ttf");
-    font-style: italic;
+a, p, li {
+    font-family: Merriweather;
 }
 
