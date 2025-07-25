@@ -26,9 +26,15 @@ The Academus Philosophy Journal provides a forum for high school students to exp
 * 🔍 **Search & Filter**: Browse by author, topic, issue, and keywords.
 * 📥 **Open Access**: All content freely available under a Creative Commons license.
 
-## Submitting Articles
+### Submission Guidelines
 
-1. write stuff here
+- **Word count**: 1,500–4,500 words  
+- **Format**: PDF only; 12pt Times New Roman, 1.5 spacing  
+- **Citation Style**: MLA or Chicago; include footnotes and bibliography  
+- **File**: Submit one document with title page (name, school, grade, email) + manuscript  
+- **Language**: English  
+- **Originality**: No prior publication; plagiarism will result in rejection  
+- **Limit**: One submission per author per issue
 
 ## DOI & ISSN Registration
 
@@ -37,8 +43,11 @@ The Academus Philosophy Journal provides a forum for high school students to exp
 
 ## Contact
 
-* **Editors**: write stuff here
+- 📬 **Email**: samcao920@gmail.com 
+- 👩‍💼 **Editor-in-Chief**: Fangyuan (Sam) Cao
+- 🧑‍💻 **Web Team**: jaspersun2019@gmail.com
+
+For general inquiries or collaborations, reach out to us directly.
 
 ---
-
 Thank you for supporting the Academus Philosophy Journal—where ideas meet action!
