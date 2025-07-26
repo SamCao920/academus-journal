@@ -31,7 +31,7 @@ The Academus Philosophy Journal provides a forum for high school students to exp
 - **Word count**: 1,500–4,500 words  
 - **Format**: PDF only; 12pt Times New Roman, 1.5 spacing  
 - **Citation Style**: MLA or Chicago; include footnotes and bibliography  
-- **File**: Submit one document with title page (name, school, grade, email) + manuscript  
+- **File**: Submit one document with title page (name, school, grade) + manuscript  
 - **Language**: English  
 - **Originality**: No prior publication; plagiarism will result in rejection  
 - **Limit**: One submission per author per issue
