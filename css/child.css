@@ -1,39 +1,57 @@
 @import url("universal.css");
 
+body {
+    width: 400pt;
+    margin: auto;
+    font-family: Merriweather, serif;
+}
 
-#title {
+#title img {
+    width: 400pt;
+    display: block;
+    margin: 0 auto;
+}
+
+#links {
+    margin-top: 20pt;
+    margin-bottom: 20pt;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    font-family: Merriweather;
 }
 
-h1 {
-    margin-top: 0pt;
-    margin-bottom: 0pt;
+#info {
+    display: flex;
+    justify-content: center;
+    font-family: Merriweather;
+    margin-bottom: 20pt;
 }
 
-#content {
-    display: inline-grid;
-    margin-left: 20pt;
-    margin-right: 20pt;
+#procedure {
+    font-family: Merriweather;
+    line-height: 1.6;
+    font-size: 12pt;
 }
 
-#page {
-    width: 500pt;
-}
-
-#nav {
-    position: fixed;
-    right: 10pt;
-    margin-left: 10pt;
-    text-align: right;
-}
-
-#nav ul {
-    list-style-type: none;
-}
-
-#nav ul li {
+.sectitle {
+    font-size: 20pt;
+    font-weight: bold;
+    margin-top: 30pt;
     margin-bottom: 10pt;
 }
 
+.secbody {
+    font-size: 12pt;
+    margin-bottom: 15pt;
+}
+
+ul, ol {
+    margin-left: 20pt;
+    margin-bottom: 15pt;
+}
+
+h3 {
+    font-size: 14pt;
+    margin-top: 20pt;
+    margin-bottom: 10pt;
+}
