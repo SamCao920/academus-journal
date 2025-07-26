@@ -3,13 +3,11 @@
 body {
     width: 400pt;
     margin: auto;
-    font-family: Merriweather, serif;
 }
 
 #title img {
     width: 400pt;
-    display: block;
-    margin: 0 auto;
+    margin: auto;
 }
 
 #links {
@@ -17,41 +15,13 @@ body {
     margin-bottom: 20pt;
     display: flex;
     justify-content: space-around;
+
     font-family: Merriweather;
 }
 
 #info {
     display: flex;
     justify-content: center;
+
     font-family: Merriweather;
-    margin-bottom: 20pt;
-}
-
-#procedure {
-    font-family: Merriweather;
-    line-height: 1.6;
-    font-size: 12pt;
-}
-
-.sectitle {
-    font-size: 20pt;
-    font-weight: bold;
-    margin-top: 30pt;
-    margin-bottom: 10pt;
-}
-
-.secbody {
-    font-size: 12pt;
-    margin-bottom: 15pt;
-}
-
-ul, ol {
-    margin-left: 20pt;
-    margin-bottom: 15pt;
-}
-
-h3 {
-    font-size: 14pt;
-    margin-top: 20pt;
-    margin-bottom: 10pt;
 }
